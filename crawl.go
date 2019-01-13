@@ -19,8 +19,6 @@ import (
 )
 
 var visited = make(map[string]bool) // map of string -> bool. visited["google.com"] = true and visited["google"]
-var oldAcronymsFound = make(chan string) // stores urls which have "ttü" in their content
-
 
 func main() {
 	flag.Parse()
